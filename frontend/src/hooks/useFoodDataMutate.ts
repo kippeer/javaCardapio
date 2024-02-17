@@ -2,7 +2,7 @@ import { useMutation, useQueryClient } from "@tanstack/react-query";
 import axios, { AxiosPromise } from "axios"
 import { FoodData } from '../interface/FoodData';
 
-const API_URL = 'http://ec2-18-220-189-27.us-east-2.compute.amazonaws.com:8080';
+const API_URL = ' http://ec2-18-220-189-27.us-east-2.compute.amazonaws.com:8080';
 
 const postData = async (data: FoodData): AxiosPromise<any> => {
     const response = axios.post(API_URL + '/food', data);
