@@ -2,10 +2,9 @@ import { useMutation, useQueryClient } from "@tanstack/react-query";
 import axios, { AxiosPromise } from "axios"
 import { FoodData } from '../interface/FoodData';
 
-const API_URL = ' https://backcardapio-eime.vercel.app'
-
 const postData = async (data: FoodData): AxiosPromise<any> => {
-    const response = axios.post(API_URL + '/food', data);
+    const API_URL = 'https://backcardapio-eime.vercel.app';
+    const response = await axios.post(`${API_URL}/food`, data);
     return response;
 }
 
