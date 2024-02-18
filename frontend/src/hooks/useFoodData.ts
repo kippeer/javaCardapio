@@ -5,7 +5,7 @@ import { FoodData } from '../interface/FoodData';
 const API_URL = 'https://backcardapio-eime.vercel.app'
 
 const fetchData = async (): AxiosPromise<FoodData[]> => {
-    const response = axios.get(API_URL + '/foods');
+    const response = axios.get(API_URL + '/food');
     return response;
 }
 
