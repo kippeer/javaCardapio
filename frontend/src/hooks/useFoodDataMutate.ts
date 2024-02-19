@@ -3,7 +3,7 @@ import axios, { AxiosPromise } from "axios"
 import { FoodData } from '../interface/FoodData';
 
 const postData = async (data: FoodData): AxiosPromise<any> => {
-    const API_URL = 'https://backcardapio-eime.vercel.app';
+    const API_URL = 'https://backcardapio.vercel.app';
     const response = await axios.post(`${API_URL}/food`, data);
     return response;
 }
